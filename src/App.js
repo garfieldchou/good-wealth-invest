@@ -28,8 +28,8 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h2>請計算下列利潤比率</h2>
-          <h3>(小數點一位以下四捨五入，例如15.67% -> 15.7%)</h3>
+          <h3>請計算下列利潤比率</h3>
+          <h5>(小數點一位以下四捨五入，例如15.67% -> 15.7%)</h5>
         </header>
         <div>
           {qAndA.map((q, idx) => {
@@ -43,8 +43,8 @@ class App extends Component {
             )
           })}
         </div>
-        <div>
-          <button onClick={this.checkAns.bind(this)}>確認答案</button>
+        <div className="App-button">
+          <button onClick={this.checkAns.bind(this)}>提交答案</button>
         </div>
       </div>
     );

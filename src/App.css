@@ -7,9 +7,22 @@
   height: 40vmin;
 }
 
+.App-button {
+  margin: 10px;
+}
+
+.App-button button {
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+  font-size: calc(5px + 2vmin);
+  border-radius: 10%;
+  border: 2px solid gray;
+}
+
 .App-header {
   background-color: #282c34;
-  min-height: 30vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;

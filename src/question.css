@@ -1,0 +1,10 @@
+.Question {
+  width: 80%;
+  margin: 6px auto;
+  border: 3px solid #4d4d33;
+}
+
+.Question input {
+  background-color:#ccccb3;
+  text-align: center;
+}

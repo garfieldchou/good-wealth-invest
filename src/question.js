@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './question.css';
 
 export default class Question extends Component {
   state = {
@@ -11,7 +12,7 @@ export default class Question extends Component {
   render() {
     const ansCorrect = parseFloat(this.state.trial) === this.props.ans;
     return (
-      <div>
+      <div className="Question">
         <p>{this.props.question}</p>
         <input
           onChange={this.getValue.bind(this)}
