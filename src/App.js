@@ -1,25 +1,18 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import qAndA from './qAndA';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <h2>請計算下列利潤比率</h2>
+          <h3>(小數點一位以下四捨五入，例如15.67% -> 15.7%)</h3>
         </header>
+        <div>
+          {qAndA.map((q, idx) => (<p key={idx}>{q.question}</p>))}
+        </div>
       </div>
     );
   }
